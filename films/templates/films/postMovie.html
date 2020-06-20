@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search movie</title>
+</head>
+<body>
+<form action="/films/" method="POST">
+    <label for="search">Search:</label>
+    <input type="text" id="search" name="search">
+
+    <input type="submit" value="Submit">
+    {% csrf_token %}
+</form>
+</body>
+</html>
